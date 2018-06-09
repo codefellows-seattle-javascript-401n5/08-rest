@@ -1,6 +1,7 @@
 'use strict';
 
 let http = require('http');
+require('dotenv').config();
 
 const router = require('./lib/router.js');
 const api = require('./api/api.js');
