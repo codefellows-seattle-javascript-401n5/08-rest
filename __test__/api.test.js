@@ -16,7 +16,7 @@ describe('API module', () => {
 
     return superagent.get('http://localhost:3000/api/v1/food?id=badID')
       .catch(err => {
-        expect(err.responseText).toBe('not found')
+        expect(err.responseText).toBe('not found');
         expect(err.responseStatus).toBe(404);
       });
   });
