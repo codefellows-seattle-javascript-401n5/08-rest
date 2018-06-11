@@ -14,13 +14,16 @@ methods.forEach((method) => {
     router[method.toLowerCase()] = function(path, callback) {
         router.routes[method][path] = callback;
     };
+
 });
 
 router.route = (req, res) => {
 
     return parser(req)
         .then(req => {
+
             let handler = router.routes[req.method][req.parsed.pathname];
+
             if(handler) {
                 return handler(req, res);
             }
