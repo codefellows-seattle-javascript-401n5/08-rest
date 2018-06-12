@@ -1,0 +1,29 @@
+{
+  "name": "08-rest",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 08: REST\r ======",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdkim/08-rest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdkim/08-rest/issues"
+  },
+  "homepage": "https://github.com/pdkim/08-rest#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "eslint": "^4.19.1",
+    "jest": "^23.1.0",
+    "lint": "^1.1.2",
+    "start": "^5.1.0",
+    "test": "^0.6.0"
+  }
+}
